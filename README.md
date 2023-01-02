@@ -36,6 +36,15 @@ Embeddings can also be used to represent other kinds of symbols, such as user or
 
 In general, embeddings are useful because they can provide a more compact and structured representation of data, which can make it easier to perform tasks such as classification, clustering, or similarity search. They can also provide a way to incorporate prior knowledge about the structure of the data into the model.
 
+### tSNE
+t-Distributed Stochastic Neighbor Embedding (t-SNE) is a dimensionality reduction technique that is commonly used to visualize high-dimensional data. It is particularly well-suited for visualizing complex, non-linear relationships in data.
+
+t-SNE works by minimizing the divergence between a high-dimensional probability distribution (representing the data in its original space) and a lower-dimensional probability distribution (representing the data in the reduced space). The minimization is done using an optimization algorithm, which adjusts the positions of the points in the reduced space in order to minimize the divergence.
+
+One key feature of t-SNE is that it tries to preserve the local structure of the data, meaning that points that are close together in the high-dimensional space will also be close together in the reduced space. This can make it effective at revealing patterns and relationships in the data that may not be apparent in other dimensionality reduction techniques.
+
+t-SNE is a powerful tool for data visualization, but it has some limitations. It can be sensitive to the choice of hyperparameters, and it can be computationally expensive for large datasets. It is also not suitable for use as a general-purpose dimensionality reduction technique, as it does not preserve the global structure of the data in the same way that some other techniques do.
+
 ### A2C Reinforcement Learning
 A2C, also known as Advantage Actor-critic, is a reinforcement learning algorithm that combines the ideas of the actor-critic method and the Q-learning algorithm. It uses value-based method for the critic part and policy-based method for the actor part.
 
