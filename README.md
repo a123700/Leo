@@ -18,6 +18,15 @@ The LSTM architecture was developed to address the problem of vanishing gradient
 
 LSTMs have been successful in a wide range of tasks, including language translation, language modeling, sentiment analysis, and more. They are particularly well-suited for tasks that require the model to remember and use long-term dependencies, such as predicting the next word in a sentence based on the context of the entire sentence.
 
+### TCN
+Temporal Convolutional Networks (TCN) are a type of deep learning model designed for processing sequential data. They are based on the idea of using convolutional neural networks (CNNs) to extract features from sequential data, similar to how CNNs are used to extract features from images.
+
+TCNs are composed of multiple layers of convolutional filters that operate on an input sequence over time. Each layer processes the input using a fixed-size kernel, which slides across the input sequence and applies the same set of filters at each time step. The outputs of the convolutional filters are then combined and passed through a nonlinear activation function before being passed on to the next layer.
+
+One advantage of TCNs is that they are able to effectively capture long-range dependencies in the input sequence, thanks to their use of dilated convolutions. Dilated convolutions allow the kernel to skip over input elements, effectively increasing the size of the kernel and allowing it to cover a larger portion of the input sequence.
+
+TCNs have been applied to a variety of tasks, including natural language processing, speech recognition, and time series forecasting. They have been shown to perform well on these tasks and to be able to learn useful features from the data.
+
 ### Embedding
 Embedding is a mapping from a discrete set of symbols or items to a continuous vector space. The purpose of an embedding is to represent the symbols in a way that captures some of the relationships or structure present in the data.
 
