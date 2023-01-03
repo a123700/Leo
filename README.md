@@ -36,6 +36,21 @@ Embeddings can also be used to represent other kinds of symbols, such as user or
 
 In general, embeddings are useful because they can provide a more compact and structured representation of data, which can make it easier to perform tasks such as classification, clustering, or similarity search. They can also provide a way to incorporate prior knowledge about the structure of the data into the model.
 
+### Time Embedding
+Time embedding is a mathematical technique used to represent a time-series data set in a higher-dimensional space. It involves constructing a sequence of vectors, called "time-embedded vectors" based on the original time-series data. Each time-embedded vector is constructed by selecting a sequence of consecutive points from the time series and using them to form a vector.
+
+For example, consider a time series of length 10, represented by the sequence of values {x1, x2, x3, ..., x10}. A time-embedded vector of dimension 3 could be constructed by selecting every third point from the time series to form a vector:
+
+[x1, x4, x7]
+
+[x2, x5, x8]
+
+[x3, x6, x9]
+
+[x4, x7, x10]
+
+In this way, the original time-series data is transformed into a set of time-embedded vectors, which can be analyzed using techniques such as dimensionality reduction or clustering. Time embedding can be useful for uncovering patterns or structure in time-series data that might not be apparent when the data is analyzed in its original form.
+
 ### tSNE
 t-Distributed Stochastic Neighbor Embedding (t-SNE) is a dimensionality reduction technique that is commonly used to visualize high-dimensional data. It is particularly well-suited for visualizing complex, non-linear relationships in data.
 
