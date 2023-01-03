@@ -10,7 +10,7 @@ The deep learning structures are based on keras and tensorflow.
 pip install keras
 pip intsall tensorflow
 ```
-## Model Introduction
+## ML Model Introduction
 ### LSTM
 Long Short-Term Memory (LSTM) is a type of recurrent neural network (RNN) that is able to remember past information and use it to help process and predict future outcomes. This is achieved through the use of internal memory cells, which can store information over a longer period of time and gates that control the flow of information into and out of the memory cells.
 
@@ -67,3 +67,28 @@ The gradient penalty is a method used to enforce the Lipschitz constraint in the
 To enforce the Lipschitz constraint, the gradient penalty adds a term to the loss function that penalizes the discriminator for producing large gradients. This is done by sampling random points on the data manifold and computing the gradient of the discriminator with respect to these points. The penalty is then computed as the square of the norm of the gradients, and it is added to the loss function with a weight factor.
 
 The gradient penalty has been shown to be effective at stabilizing the training process and improving the quality of the generated samples in WGANs. It has also been used in other generative models that use the GAN framework, such as the Improved Wasserstein GAN (IWGAN) and the Least Squares GAN (LSGAN).
+
+## Quantitive Finance Model Introduction
+### Black-Scholes model
+The Black-Scholes model relies on several key assumptions, including the assumption that the underlying asset follows a lognormal distribution of price changes, and that the option can only be exercised at expiration. Using these assumptions, the model can be used to calculate the theoretical price of the option, as well as various risk measures such as delta, gamma, theta, and vega.
+
+While the Black-Scholes model has been widely used, it has also been criticized for its assumptions, which may not always hold in practice. Despite this, the model remains a popular tool for pricing options and is widely used in financial markets.
+
+### Heston model
+The Heston model is based on the assumption that the underlying asset price follows a geometric Brownian motion process, similar to the Black-Scholes model. However, it also assumes that the volatility of the asset follows a mean-reverting process, meaning that it tends to move back towards a long-term average value over time. The Heston model can be used to calculate the theoretical price of a European call or put option, as well as various risk measures such as delta, gamma, theta, and vega.
+
+Like the Black-Scholes model, the Heston model has been widely used in finance, but has also been criticized for its assumptions, which may not always hold in practice. Despite this, the model remains a popular tool for pricing options and other derivative securities.
+
+### Morte Carlo Simulation
+Monte Carlo simulation is a statistical technique that involves using random sampling to perform mathematical calculations. It is named after the city of Monte Carlo in Monaco, which is famous for its casinos.
+
+In a Monte Carlo simulation, random values are generated and used to perform a calculation multiple times. The results of these calculations are then analyzed to determine the likely outcome of the overall process. This technique can be used to model complex systems or to solve problems that cannot be easily solved using traditional methods.
+
+Monte Carlo simulation is used in a wide range of fields, including finance, engineering, and science. It is particularly useful for problems where the probability distribution of the input variables is known or can be approximated, but the problem itself is too complex to solve analytically. By using random sampling to model the problem, it is possible to estimate the likely outcome and to evaluate the impact of different input variables on the result.
+
+### Variance Reduction Methods
+There are several variance reduction techniques that can be used to improve the accuracy and efficiency of Monte Carlo simulations. One such technique is stratified sampling, in which the sample space is divided into a number of "strata," and random sampling is used to select a representative sample from each stratum. This can help to reduce the variance in the results by ensuring that the sample is more evenly distributed across the sample space.
+
+Another technique is importance sampling, in which the sampling distribution is chosen to be proportional to the importance of the different parts of the sample space. This can help to reduce the variance by giving more weight to the parts of the sample space that are more important to the final result.
+
+Other variance reduction techniques include control variates, antithetic variates, and common random numbers. These techniques can be used in combination to further reduce the variance in the results of a Monte Carlo simulation.
