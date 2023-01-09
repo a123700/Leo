@@ -83,6 +83,13 @@ To enforce the Lipschitz constraint, the gradient penalty adds a term to the los
 
 The gradient penalty has been shown to be effective at stabilizing the training process and improving the quality of the generated samples in WGANs. It has also been used in other generative models that use the GAN framework, such as the Improved Wasserstein GAN (IWGAN) and the Least Squares GAN (LSGAN).
 
+### CycleGAN
+CycleGAN is a type of generative adversarial network (GAN) designed for the purpose of image-to-image translation. It is particularly useful for converting images from one domain (e.g. horses) to another domain (e.g. zebras) without requiring a large dataset of paired images.
+
+The idea behind CycleGAN is to use two GANs, one to translate images from domain A to domain B and another to translate images from domain B back to domain A. These two GANs are trained to generate images that are "realistic" and that can be "reconstructed" back to the original domain. The reconstruction is achieved using a process called "cycle consistency," which means that the images produced by one GAN should be able to be fed into the other GAN and produce an image that is similar to the original.
+
+One of the key advantages of CycleGAN is that it can learn to translate between two domains even if there is no direct mapping between the two. This makes it a powerful tool for tasks such as style transfer and image-to-image translation.
+
 ## Quantitive Finance Model Introduction
 ### Black-Scholes model
 The Black-Scholes model relies on several key assumptions, including the assumption that the underlying asset follows a lognormal distribution of price changes, and that the option can only be exercised at expiration. Using these assumptions, the model can be used to calculate the theoretical price of the option, as well as various risk measures such as delta, gamma, theta, and vega.
